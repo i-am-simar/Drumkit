@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background: url("light.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.drum-kit {
+  margin: 0;
+  padding: 0 2em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.drum-kit__drum {
+  cursor: pointer;
+  display: block;
+  width: 30%;
+  text-align: center;
+  padding: 2em 0;
+  margin: 0.5em 0;
+  border: 0.5em solid #fff;
+  color: #fff;
+  transition: 50ms ease-in;
+}
+.drum-kit__drum--active {
+  background: #fff;
+  color: #000;
+  transform: scale(1.1);
+}
+.drum-kit__drum__key {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 2em;
+  font-weight: bold;
+  display: block;
+}
+.drum-kit__drum__type {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-transform: uppercase;
+}
